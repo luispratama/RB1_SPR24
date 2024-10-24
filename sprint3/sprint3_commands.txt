@@ -1,0 +1,14 @@
+# Launch World
+export TURTLEBOT3_MODEL=waffle_pi
+ros2 launch turtlebot3_gazebo turtlebot3_warehouse.launch.py use_sim_time:=true
+
+# Place Cylinder - 1 m tall
+ros2 run sprint3 place_cylinder --ros-args -p x:=-8.0 -p y:=-2.5
+
+# Filter Cylinder
+ros2 run sprint3 filter_cylinder
+
+
+
+
+ 
